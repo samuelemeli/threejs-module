@@ -1,0 +1,15 @@
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Catalog\Block\Product\View" name="three.product.view" template="Magento_Catalog::product/view/type/threeview.phtml" before="-"/>
+        </referenceContainer>
+        <referenceContainer name="product.info.main" />
+        <referenceContainer name="product.info.media">
+
+                <container name="three.main" htmlTag="div" before="main" />
+
+        </referenceContainer>
+        <referenceContainer name="product.info.details" />
+        <referenceBlock name="page.main.title" />
+    </body>
+</page>
